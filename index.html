@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <table> <!--Criar Tabela-->
-        <caption>Notas em Matematica</caption>
-        <thead> <!--Cabeçalho Tabela-->
-            <tr> <!--linha Tabela-->
-                <th>Nome aluno</th> <!--coluna Tabela-->
-                <th>Nota aluno</th>
-            </tr>
-        </thead>
-        <tbody><!--Conteudo Tabela-->
-            <tr>
-                <td>Aluno A</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Aluno B</td>
-                <td>7</td>
-            </tr>
-            <tfoot> <!--Rodape Tabela-->
+    <h2>Cadastro</h2>
+    <form>
+        <table cellpadding="5" cellspacing="2">
+            <tbody>
                 <tr>
-                    <td>Média</td>
-                    <td>7,5</td>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" /></td>
                 </tr>
-            </tfoot>
-            
-        </tbody>
-    </table>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" id="senha" name="email" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                        <button type="reset">
+                            Limpar
+                        </button>
+                    </td>                       
+                </tr>                    
+            </tbody>
+        </table>
+        
+        
+    </form>
 </body>
 </html>
